@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body style="background-image:url(./giphyupdate.gif); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+        <div style="display: flex; background-color: white; justify-content: space-between; padding-right: 16px; padding-left: 16px; background-color: rgba(255, 255, 255, .9); color: #000000;">
+            <p>
+                Thomas
+            </p>
+            <p id="time">
+                
+            </p>
+        </div>
+        <div style="background-color: white; border: solid; width: fit-content; padding: 32px; border-radius: 16px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <h1>Welcome to my OS</h1>
+            <h2 style="color: blue">Introduction</h2>
+            <p>Hello world!</p>
+            <a href="https://cdn.hackclub.com/019d2a90-4077-7026-aaeb-226301f2d0a9/2026_03_26_0hk_Kleki%20(1).png">label</a>
+        </div>
+        <script src="script.js">
+            function updateTime() {
+                var currentTime = new Date().toLocaleString();
+                var timeText = document.querySelector("#time");
+                timeText.innerHTML = currentTime
+            }
+            setInterval(updateTime, 1000);
+        </script>
+    </body>
+</html>
